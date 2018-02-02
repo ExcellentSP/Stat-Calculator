@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: sphil
- * Date: 2/2/2018
- * Time: 11:04 AM
+ * Get build points
+ * Compare build points to current points and available points for level
+ * Provide percent based distribution results
  */
 
 class Stat_Calculator
@@ -62,7 +61,7 @@ class Stat_Calculator
     }
 
     /**
-     * @return assoc array
+     * @return array[string]
      */
     private function distribute_points(){
 
@@ -89,8 +88,8 @@ class Stat_Calculator
     }
 
     /**
-     * @param assoc array $stats
-     * @return assoc array
+     * @param array[string] $stats
+     * @return array[string]
      */
     private	function calculate_percents( $stats ) {
 
@@ -107,9 +106,9 @@ class Stat_Calculator
     }
 
     /**
-     * @param assoc array $initial
-     * @param assoc array $less
-     * @return assoc array
+     * @param array[string] $initial
+     * @param array[string] $less
+     * @return array[string]
      */
     private function calculate_diffs( $initial, $less ){
 
@@ -124,8 +123,8 @@ class Stat_Calculator
     }
 
     /**
-     * @param assoc array $stats
-     * @param assoc array $level
+     * @param array[string] $stats
+     * @param array[string] $level
      * @return string
      */
     private function formulate_result( $stats, $level ) {

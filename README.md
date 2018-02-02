@@ -8,8 +8,9 @@
 ###Coming Soon (in launch order)
 <ol>
 <li>Ajax enabled display on the front-end</li>
+<li>Current character stats input</li>
 <li>More intuitive UI</li>
-<li>onKeyUp Stat Updates</li>
+<li>onKeyUp result stat updates</li>
 <li>Higher level support for Dragonball Z Xenoverse 2</li>
 <li>Support for other games (Fallout 4, DragonAge, etc.)</li>
 </ol>
